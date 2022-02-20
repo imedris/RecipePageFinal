@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
+
 <head>
+	<link rel="icon" href="images/logo1.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -10,27 +13,61 @@
 <body>
 
 
-
-
-
-
 <div id="loader"></div>
 	<div class="navbar">
-			<img class="logo" src="images/logo1.png">
+
+		<a href="https://csds.gsu.edu/"><img src="images/logo1.png"></a>
 			<nav>
 				<ul>
-					<li>HOME</li>
-					<li>CLASS</li>
-					<li>ABOUT</li>
+
+					<li>
+						<div class="svg-wrapper">
+			      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+			        <rect id="shape" height="40" width="150" />
+			        <div id="text">
+			          <a href=""><span class="spot"></span>Home</a>
+			        </div>
+			      </svg>
+			    </div>
+				</li>
+
+				<li> <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape" height="40" width="150" />
+        <div id="text">
+          <a href="pages/profile.html"><span class="spot"></span>Team Members</a>
+        </div>
+      </svg>
+    </div></li>
+
+    		<li> </li>
+
+
 				</ul>
 			</nav>
-			<button>Log In</button>
+			
 		</div>
 
 
+
+
 	<div class="maincontent">
-		
+
+		<img class="logo" src="images/logogif.gif"></a>
+		<!-- Side navigation bar<!-->
+			<input type="checkbox" id="toggle" name="toggle">
+
+			<ul class="navigation-menu">
+			  <li><a href="">Home</a></li>
+			  <li><a href="pages/profile.html">Contact</a></li>
+			  <li><a href="#">Youtube</a></li>			</ul>
+
+			<div class="navbari">
+			  <label for="toggle"><i class="fa fa-bars"></i> <img src="images/navbaricon.jpg" width="70px"></label>
+			</div>
+
 		<div class="content">
+
 			<!--
 			<h1><br>Hungry Students</h1>
 			<button type="button">Take a tour!</button>
@@ -40,7 +77,7 @@
 
 	<div class="slider">
         <div class="images">
-            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img1">
             <input type="radio" name="slide" id="img2">
             <input type="radio" name="slide" id="img3">
             <input type="radio" name="slide" id="img4">
@@ -49,6 +86,8 @@
             <img src="images/secondslide.jpg" class="m2" alt="img2">
             <img src="images/thirdslide.jpg" class="m3" alt="img3">
             <img src="images/forthslide.jpg" class="m4" alt="img4">
+
+
         </div>
         <div class="dots">
             <label for="img1"></label>
@@ -59,35 +98,42 @@
     </div>
 <!--
 		<div class="cardcontainer">
-				<div class="firstcard">	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<div class="firstcard">	<p>Click me dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 				</div>
-				<div class="firstcard">	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<div class="firstcard">	<p>Click me dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 				</div>
-				<div class="firstcard">	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<div class="firstcard">	<p>Click me dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 				</div>
-				<div class="firstcard">	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<div class="firstcard">	<p>Click me dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 				</div>
 			</div>
 !-->s
 
 <div class="wrapper">
-  <h1>Parallax Flipping Cards</h1>
+	<div>
+  <h1 class="maintitle">Browse our popular Recipes</h1>
+  <hr class="hrr">
+
+</div>
+
   <div class="cols">
 			<div class="col" ontouchstart="this.classList.toggle('hover');">
 				<div class="container">
+					
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/1:1/w_2580%2Cc_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg)">
 						<div class="inner">
 							<p>Chicken Alfredo Pasta</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-						  <p>Easy pasta recipes filled many of the slots on our most popular recipes of the year list. But this one is even easier than most.</p>
+							<a href="pages/page2.html">
+						  <p>Easy pasta recipes filled many of the slots on our most popular recipes of the year list. But this one is even easier than most.</p></a>
 						</div>
 					</div>
 				</div>
@@ -97,12 +143,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/5fdce662a3638a389ff839b0/1:1/w_2580%2Cc_limit/BombayToastie_HERO_RECIPE_2-121620_6533.jpg)">
 						<div class="inner">
 							<p>Bombay Masala Chile Toasties</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>Epi contributor Tara O'Brady's version of the Indian street food classic is melty, cheesy, crunchy, spicy, and downright delicious. </p>
+							<a href="pages/page3.html">
+							<p>Epi contributor version of the Indian street food classic is melty, cheesy, crunchy, spicy, and downright delicious. </p> </a>
 						</div>
 					</div>
 				</div>
@@ -112,12 +159,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/600213c5ff3419dade54528c/1:1/w_2580%2Cc_limit/LemonCurd_RECIPE_INSET_011421_7076.jpg)">
 						<div class="inner">
 							<p>Lemon Curd</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>This classic lemon curd recipe uses equal quantities of fresh lemon juice and sugar, so that it's bright and tart.</p>
+							<a href="pages/page4.html">
+							<p>This classic lemon curd recipe uses equal quantities of fresh lemon juice and sugar, so that it's bright and tart.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -127,12 +175,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/5b2941f3633abc5aa71cc8dd/1:1/w_2580%2Cc_limit/Why-This-Is-the-Best-Cheesecake-Ever-14062018.jpg)">
 						<div class="inner">
 							<p>Cities of Spain Cheesecake</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>Is this recipe from Gourmet simply the best cheesecake recipe of all time? There are certainly those who make that argument.</p>
+							<a href="pages/page5.html">
+							<p>Is this recipe from Gourmet simply the best cheesecake recipe of all time? There are certainly those who make that argument.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -142,12 +191,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/5e31f0355c5695000956f6e5/1:1/w_2580%2Cc_limit/My-Favorite-Simple-Roast-Chicken-Thomas-Keller-012920.jpg)">
 						<div class="inner">
 							<p>Roast Chicken</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>This classic Thomas Keller recipe yields a juicy bird with remarkably crispy skin. Serve with roast potatoes and a crisp salad.</p>
+							<a href="pages/page6.html">
+							<p>This classic Thomas Keller recipe yields a juicy bird with remarkably crispy skin. Serve with roast potatoes and a crisp salad.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -157,12 +207,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/54b87c137cbba01c0db7ff8d/1:1/w_2580%2Cc_limit/51248830_cioppino_1x1.jpg)">
 						<div class="inner">
 							<p>Cioppino Seafood Stew</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>You can use any firm fish and fresh shellfish you like for this brothy stew. (A little crabmeat is a luxurious addition, as well.) Make the base a day in advance for a low-stress feast.</p>
+							<a href="pages/page7.html">
+							<p>You can use any firm fish and fresh shellfish you like for this brothy stew. (A little crabmeat is a luxurious addition, as well.) Make the base a day in advance for a low-stress feast.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -172,12 +223,13 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/58d2960d0008d94d75fb8600/1:1/w_2580%2Cc_limit/Leg-of-Lamb-With-Garlic-and-Rosemary-22032017.jpg)">
 						<div class="inner">
 							<p>Lamb with Garlic & Rosemary</p>
-              <span>Lorem ipsum</span>
+              <span>Click me</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>This old Gourmet leg of lamb recipe gets tons of five-star reviews. Serve it for the holidays and you'll see why.</p>
+							<a href="pages/page8.html">
+							<p>This old Gourmet leg of lamb recipe gets tons of five-star reviews. Serve it for the holidays and you'll see why.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -187,12 +239,12 @@
 					<div class="front" style="background-image: url(https://assets.epicurious.com/photos/5f5956b047453b078b7903f9/1:1/w_2580%2Cc_limit/ChocolateZucchiniCake_RECIPE_094652_V1_final.jpg)">
 						<div class="inner">
 							<p>Zucchini Cake</p>
-              <span>Lorem ipsum</span>
 						</div>
 					</div>
 					<div class="back">
 						<div class="inner">
-							<p>Zucchini keeps this cake incredibly moist, while scattered chocolate chips (or chocolate pyramids) and chopped walnuts add texture and dimension.</p>
+							<a href="pages/page8.html">
+							<p>Zucchini keeps this cake incredibly moist, while scattered chocolate chips (or chocolate pyramids) and chopped walnuts add texture and dimension.</p> </a>
 						</div>
 					</div>
 				</div>
@@ -219,6 +271,11 @@
 	</div>
 
 
+
+<!--
+	This is the only js code we used
+	this code gives a delay between loading the website 
+	so we can see the loader animation. <!-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>

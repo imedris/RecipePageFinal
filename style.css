@@ -3,72 +3,150 @@
 	padding: 0;
 	font-family: sans-serif;
 
+
+}
+body{
+		background-image: url(images/newback.jpg);
+
+	background-size: cover;
+	overflow: overlay;
+	background-repeat:no-repeat ;
+	background-position: center;
 }
 
 
 
 .maincontent{
 	width: 100%;
-	height: 100vh;
-	padding-top: 100px;
-	background-image: url(images/background4.jpg);
-	background-size: cover;
-	overflow: overlay;
-	background-position: center;
+	height: 100%;
+	padding-top: 90px;
 
+}
 
+.navbar img{
+	width: 120px;
+	margin-left: 400px;
 }
 
 
 .logo{
-	width: 150px;
-	margin-top: 5px;
+
+	width: 100px;
 	position: absolute;
-	position: left;
-	margin-left: 20px ;
+	top: 90px;
+	left: 30px;
 	cursor: pointer;
 }
 .content{
 	margin-top: 280px;
-	margin-inline: 100p;
+	margin-inline: 100px;
 }
-.navbar{
-	width: 100%;
-	height: 15%;
-	position: fixed;
-	background: transparent;
 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.maintitle{
+	color: white; 
+	font-family: monospace;
+	text-transform: uppercase;
+	text-shadow: 2px 2px black; 
+	text-align: left;
+	margin: 0;
+	margin-left: 100px;
 }
-nav{
-	flex: 1;
-	color: white;
-	text-align: right;
+.hrr{
+margin-bottom: 30px;
+
+}
+
+.navbar{
+z-index: 400; 
+	clip-path: ellipse(54% 100% at 52.96% 0%); 
+	width: 95%; 
+	height: 12%;
+ padding-right: 200px; 
+ position: fixed; 
+ background: rgb(2,0,36); background:
+ linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(255,177,30,1) 32%, rgba(254,174,0,1) 87%, rgba(255,30,30,1) 100%);	display: flex; align-items:
+ center; justify-content: space-between; overflow: hidden; } nav{ flex: 1;
+ color: black; text-align: right;
+
 }
 nav ul li{
 	list-style: none;
 	display: inline-block;
-	margin: 60px;
-}
-nav ul li a{
-	text-decoration: none;
-	color: white;
-	font-size: 13px;
-}
-button{
-	margin: 1em;
-	padding: 10px 25px;
-	background: white;
-	cursor: pointer;
-	outline: none;
-	border: 1px solid white;
-	border-radius: 20px;
+	margin: 30px;
+
+border-radius: 20px;}
+
+
+
+/*
+Button
+*/
+
+
+.svg-wrapper {
+	display: flex;
+	justify-content: space-between; 
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  z-index: 998;
+ 	background: darkgoldenrod;
+ 	border-radius: 10px;
+
+
 
 }
 
 
+#shape {
+  stroke-width: 6px;
+   	fill: transparent;
+
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+
+}
+/* 
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -35px;
+  text-align: center;
+
+}
+
+#text a {
+	text-transform: uppercase;
+  color: black;
+
+  font-family: cursive;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+/* 
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+
+
+/*...................*/
 .content{
 	color: #fbfcfd;
 	position: absolute;
@@ -92,8 +170,8 @@ h1{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	position: static;
-	bottom: -10px;
+	position: relative;
+	bottom: -300;
 }
 
 @keyframes animations{
@@ -141,17 +219,27 @@ h1{
 	animation-delay: 5.5s;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
+
+/*Scroll bar*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background: transparent;
 }
 
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #FFF;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: skyblue;
 }
+
+
 
 
 #loader{
@@ -163,29 +251,13 @@ body::-webkit-scrollbar-thumb {
 	z-index: 999;
 }
 
-.cardcontainer{
-	display: grid;
-	grid-template-columns: 50em 55em;
-}
 
-.firstcard{
-	width: 200px;
-	height: 230px;
-	display: inline-block;
-	border-radius: 10px;
-	padding: 15px 25px;
-	box-sizing: border-box;
-	cursor: pointer;
-	margin: 10px 15px;
-	background-image: url(images/background4.jpg);
-	background-position: center;
-	background-size: cover;
-}
+
 
 
 .slider{
    border-radius: 35px; 	
-   width: 90%;
+   width: 75%;
    overflow: hidden;
    margin: 0 auto;
    margin-block: 5px;
@@ -195,7 +267,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 .images img {
-    height: 400px;
+    height: 300px;
     width: 100%;
     transition: all 0.15s ease;
 }
@@ -218,16 +290,16 @@ body::-webkit-scrollbar-thumb {
 }
 .dots label:hover {background: #fff;}
 #img1:checked ~ .m1 {
-    margin-left: -80;
+    margin-left: -100px;
 }
 #img2:checked ~ .m2 {
-    margin-left: -90%;
+    margin-left: -400px;
 }
 #img3:checked ~ .m3 {
-    margin-right: -100%;
+    margin-left: -1000px;
 }
 #img4:checked ~ .m4 {
-    margin-right: -70%;
+    margin-left: -1000px;
 }
 
 
@@ -291,7 +363,7 @@ color: rgba(255,255,255,0.8);
 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
+	  backface-visibility: hidden;
 	text-align: center;
 	min-height: 280px;
 	height: auto;
@@ -301,10 +373,7 @@ color: rgba(255,255,255,0.8);
 }
 
 .back{
-  background: #cedce7;
-  background: url(); -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background-image: url(images/cardback.jpeg);
 }
 
 .front:after{
@@ -422,3 +491,73 @@ color: rgba(255,255,255,0.8);
     margin: 0 0 2rem 0;
   }
 }
+
+
+.fa-bars {
+  margin-right: 10px;
+}
+.navbari img{
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    z-index: 898;
+}
+
+.navigation-menu {
+  background: #111;
+  height: 100%;
+  width: 30%;
+  padding: 60px 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  right: -45%;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 1;
+  font-size: 60px;
+}
+
+.navigation-menu li {
+  padding: 30px 0;
+}
+
+.navigation-menu li:nth-of-type(2n) {
+  background: #222;
+}
+
+.navigation-menu li:hover {
+  background: orangered;
+}
+
+.navigation-menu a {
+  color: #E5E5E5;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  transition:all 0.3s;
+}
+
+
+
+
+/* Hide the checkbox */
+#toggle {
+  display: none; 
+}
+
+/* Use this label to toggle the sliding menu */
+label[for="toggle"] {
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 190px;
+}
+
+/* Slide menu when checkbox is checked */
+input#toggle:checked + ul.navigation-menu {
+  right: 0;
+}
+
+
+
