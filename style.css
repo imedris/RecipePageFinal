@@ -89,7 +89,6 @@ Button
   margin-top: 0;
   position: relative;
   width: 150px;
-  /*make sure to use same height/width as in the html*/
   height: 40px;
   display: inline-block;
   margin-left: 5px;
@@ -113,10 +112,7 @@ Button
   transition: 1s all ease;
 
 }
-/* 
-    Pushing the text up into the SVG. Without this the
-    text would be below the div's.
-*/
+
 
 #text {
   margin-top: -35px;
@@ -133,10 +129,6 @@ Button
   font-weight: 100;
   font-size: 1.1em;
 }
-/* 
-    Changing the shape on hover. I change the color of the stroke,
-make it thinner, then set it to again wrap around the entire parent element.
-*/
 
 .svg-wrapper:hover #shape {
   stroke-dasharray: 50 0;
